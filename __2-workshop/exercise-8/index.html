@@ -1,1 +1,39 @@
 <!-- ...crickets... -->
+<html>
+    <body>
+        <h1>Registration form</h1>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" required />
+            <label for="userPW">password</label>
+            <input type="password" id="userPW" required />
+            <label for="userEmail">Email</label>
+            <input type="text" id="userEmail" required />
+            <h2> Which taxi do you require?</h2>
+            <input type="radio" id="car" name="taxi" value="taxi" required />
+            <label for="car">Car</label>
+            <input type="radio" id="van" name="taxi" value="van" required />
+            <label for="var">Van</label>
+            <input type="radio" id="tuk" name="taxi" value="tuk" required />
+            <label for="tuk">Tuk Tuk</label>
+            <h2>Choose your extras</h2>
+            <input type="checkbox" id="babySeat" value="babySeat" />
+            <label for="BabySeat">Baby seat</label>
+            <input type="checkbox" id="wheelchair" value="wheelchair" />
+            <label for="wheelchair">Wheelchair access</label>
+            <input type="checkbox" id="privacyWindows" value="privacyWindows" />
+            <label for="privacyWindows">Privacy Windows</label>
+            <h2>Where would you like us to pick you up?</h2>
+            <label for="pickupLocation">Pickup Location</label>
+           <select name="pickupLocation" id="pickupLocation">
+               <option value="selectOne">Select One</option>
+               <option value="airport">Airport</option>
+               <option value="hotel">Hotel</option>
+           </select>
+            <h2>Additional Instructions</h2>
+            <label for="specialInstructions">Special</label>
+            <textarea id="specialInstructions" name="specialInstructions" row=2>provide special instructions here</textarea>
+            <input type="button" id="submit" value="Submit">
+        </form>
+    </body>
+</html>
